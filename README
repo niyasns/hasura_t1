@@ -9,16 +9,16 @@ This is a twitter clone built with React-Native. This app contains some screens 
 3. Download and install Android Studio
 4. Create an environment variable with the Java SDK path
 5. Set up an Android virtual device
-6. Run  npm install -g react-native-cli
+6. Run  `npm install -g react-native-cli`
 
 ## Getting Started
 
 1. Clone this repo
-  https://github.com/niyasns/hasura_t1.git
+  `https://github.com/niyasns/hasura_t1.git`
 2. Enter the project folder
-4. run npm install
-5. Ensure an emultor is live using adb devices command
-6. Run react-native run-android 
+4. run `npm install`
+5. Ensure an emultor is live using `adb devices` command
+6. Run `react-native run-android` 
 
 ## Built With
 
