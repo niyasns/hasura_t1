@@ -31,15 +31,15 @@ const Tab1 = () => {
                             <Text style={styles.icontext}>60</Text>
                         </View>
                         <View style={styles.iconset}>
-                        <Icon name='autorenew' size={20} color='#B0BEC5' />
-                        <Text style={styles.icontext}>2</Text>
+                            <Icon name='autorenew' size={20} color='#B0BEC5' />
+                            <Text style={styles.icontext}>2</Text>
                         </View>
                         <View style={styles.iconset}>
-                        <Icon name='favorite-border' size={20} color='#B0BEC5' />
-                        <Text style={styles.icontext}>19</Text>
+                            <Icon name='favorite-border' size={20} color='#B0BEC5' />
+                            <Text style={styles.icontext}>19</Text>
                         </View>
                         <View style={styles.iconset}>
-                        <Icon name='email' size={20} color='#B0BEC5' />
+                            <Icon name='email' size={20} color='#B0BEC5' />
                         </View>
                     </CardItem> 
                 </Card>
@@ -67,15 +67,15 @@ const Tab1 = () => {
                             <Text style={styles.icontext}>148</Text>
                         </View>
                         <View style={styles.iconset}>
-                        <Icon name='autorenew' size={20} color='#B0BEC5' />
-                        <Text style={styles.icontext}>242K</Text>
+                            <Icon name='autorenew' size={20} color='#B0BEC5' />
+                            <Text style={styles.icontext}>242K</Text>
                         </View>
                         <View style={styles.iconset}>
-                        <Icon name='favorite-border' size={20} color='#B0BEC5' />
-                        <Text style={styles.icontext}>11K</Text>
+                            <Icon name='favorite-border' size={20} color='#B0BEC5' />
+                            <Text style={styles.icontext}>11K</Text>
                         </View>
                         <View style={styles.iconset}>
-                        <Icon name='email' size={20} color='#B0BEC5' />
+                            <Icon name='email' size={20} color='#B0BEC5' />
                         </View>
                     </CardItem> 
                 </Card>
@@ -100,18 +100,18 @@ const Tab1 = () => {
                     <CardItem style={styles.iconbar}>
                         <View style={styles.iconset}>
                             <Icon name='mode-comment' size={20} color='#B0BEC5' />
-                            <Text style={styles.icontext}>60</Text>
+                            <Text style={styles.icontext}>1.2K</Text>
                         </View>
                         <View style={styles.iconset}>
-                        <Icon name='autorenew' size={20} color='#B0BEC5' />
-                        <Text style={styles.icontext}>2</Text>
+                            <Icon name='autorenew' size={20} color='#B0BEC5' />
+                            <Text style={styles.icontext}>4.4K</Text>
                         </View>
                         <View style={styles.iconset}>
-                        <Icon name='favorite-border' size={20} color='#B0BEC5' />
-                        <Text style={styles.icontext}>19</Text>
+                            <Icon name='favorite-border' size={20} color='#B0BEC5' />
+                            <Text style={styles.icontext}>47K</Text>
                         </View>
                         <View style={styles.iconset}>
-                        <Icon name='email' size={20} color='#B0BEC5' />
+                            <Icon name='email' size={20} color='#B0BEC5' />
                         </View>
                     </CardItem> 
                 </Card>
