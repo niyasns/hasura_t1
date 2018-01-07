@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Drawer, Fab, Icon } from 'native-base';
+import { Drawer, Fab, Icon } from 'native-base';
 import NavBar from '../components/navbar';
 import TabBar from '../components/tabbar';
 import SideBar from '../components/sidebar';
@@ -75,7 +75,7 @@ class HomeScreen extends Component {
           style={{ backgroundColor: '#29B6F6' }}
           position="bottomRight" 
         >
-          <Icon name="share" />
+          <Icon name="add" style={{ fontSize: 35 }}/>
         </Fab>
         </Drawer>
       );

@@ -55,31 +55,49 @@ export default class TabBar extends Component {
             <Tabs tabBarUnderlineStyle={styles.tabBarUnderline} onChangeTab={this.tabSelected}>
                 <Tab 
                 heading={<TabHeading style={styles.tabHeading}>
-                <Icon name="home" style={[styles.iconStyle, this.state.flag0 && styles.selectedIconStyle]} />
+                <Icon 
+                name="home" 
+                style={[styles.iconStyle, this.state.flag0 && styles.selectedIconStyle]} 
+                />
                 </TabHeading>}
                 >
                     <Tab1 />
                 </Tab>
                 <Tab 
-                heading={<TabHeading style={styles.tabHeading} ><Icon name="home" style={[styles.iconStyle, this.state.flag1 && styles.selectedIconStyle]} /></TabHeading>} 
+                heading={<TabHeading style={styles.tabHeading} >
+                <Icon 
+                name="search" 
+                style={[styles.iconStyle, this.state.flag1 && styles.selectedIconStyle]} 
+                />
+                </TabHeading>} 
                 
                 >
                     <Tab1 />
                 </Tab>
                 <Tab 
-                heading={<TabHeading style={styles.tabHeading}><Icon name="home" style={[styles.iconStyle, this.state.flag2 && styles.selectedIconStyle]} /></TabHeading>}
+                heading={<TabHeading style={styles.tabHeading}>
+                <Icon 
+                name="notifications" 
+                style={[styles.iconStyle, this.state.flag2 && styles.selectedIconStyle]} 
+                />
+                </TabHeading>}
                 >
                     <Tab1 />
                 </Tab>
                 <Tab 
-                heading={<TabHeading style={styles.tabHeading}><Icon name="home" style={[styles.iconStyle, this.state.flag3 && styles.selectedIconStyle]} /></TabHeading>}
+                heading={<TabHeading style={styles.tabHeading}>
+                <Icon 
+                name="mail" 
+                style={[styles.iconStyle, this.state.flag3 && styles.selectedIconStyle]} 
+                />
+                </TabHeading>}
                 >
                     <Tab1 />
                 </Tab>
             </Tabs>
         );
     }
-};
+}
 
 const styles = StyleSheet.create({
     tabHeading: {
