@@ -11,7 +11,7 @@ class HomeScreen extends Component {
     super(props);
     this.state = {
       title: 'Home',
-      selected: 0
+      selected: 0,
     };
   }
 
@@ -49,7 +49,7 @@ class HomeScreen extends Component {
         side="left"
         >
         <SearchBar openDrawer={this.openDrawer} />
-        <TabBar callbackFromParent={this.myCallback} />
+        <TabBar iconColor={this.state.iconColor} callbackFromParent={this.myCallback} />
         </Drawer>
       );
     }
@@ -64,7 +64,7 @@ class HomeScreen extends Component {
         side="left"
         >
         <NavBar title={this.state.title} openDrawer={this.openDrawer} />
-        <TabBar callbackFromParent={this.myCallback} />
+        <TabBar iconColor={this.state.iconColor} callbackFromParent={this.myCallback} />
         </Drawer>
       );
     }
