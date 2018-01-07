@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import { Thumbnail, Header, Left, Button, Item, Text } from 'native-base';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Actions } from 'react-native-router-flux';
-
+/*SearchBar is used in header of search tab*/
 const SearchBar = (props) => {
   return (
     <Header hasTabs style={styles.header} searchBar rounded>

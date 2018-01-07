@@ -4,7 +4,9 @@ import { Tabs, Tab, TabHeading, Icon } from 'native-base';
 import Tab1 from './tabs/tab1';
 
 export default class TabBar extends Component {
-
+/*'selected' state is used to represent selected tab.
+4 flag states are used to change the tabbar icon colors 
+according to selection*/
     constructor(props) {
         super(props);
         this.state = {
@@ -15,6 +17,8 @@ export default class TabBar extends Component {
             flag3: false
         };
     }
+    /*callbackFromParent function gives selected tab id to HomeScreen.
+    flag values are changed to change the color of tab bar icons*/
     tabSelected = (i) => {
         this.setState({ selected: i.i }, function () {
             this.props.callbackFromParent(i.i);
@@ -49,12 +53,12 @@ export default class TabBar extends Component {
         console.log(this.state.flag2);
         console.log(this.state.flag3);
     }
-
     render() {
         return (
             <Tabs tabBarUnderlineStyle={styles.tabBarUnderline} onChangeTab={this.tabSelected}>
                 <Tab 
-                heading={<TabHeading style={styles.tabHeading}>
+                heading={
+                <TabHeading style={styles.tabHeading}>
                 <Icon 
                 name="home" 
                 style={[styles.iconStyle, this.state.flag0 && styles.selectedIconStyle]} 
@@ -64,18 +68,19 @@ export default class TabBar extends Component {
                     <Tab1 />
                 </Tab>
                 <Tab 
-                heading={<TabHeading style={styles.tabHeading} >
+                heading={
+                <TabHeading style={styles.tabHeading} >
                 <Icon 
                 name="search" 
                 style={[styles.iconStyle, this.state.flag1 && styles.selectedIconStyle]} 
                 />
                 </TabHeading>} 
-                
                 >
                     <Tab1 />
                 </Tab>
                 <Tab 
-                heading={<TabHeading style={styles.tabHeading}>
+                heading={
+                <TabHeading style={styles.tabHeading}>
                 <Icon 
                 name="notifications" 
                 style={[styles.iconStyle, this.state.flag2 && styles.selectedIconStyle]} 
@@ -85,7 +90,8 @@ export default class TabBar extends Component {
                     <Tab1 />
                 </Tab>
                 <Tab 
-                heading={<TabHeading style={styles.tabHeading}>
+                heading={
+                <TabHeading style={styles.tabHeading}>
                 <Icon 
                 name="mail" 
                 style={[styles.iconStyle, this.state.flag3 && styles.selectedIconStyle]} 

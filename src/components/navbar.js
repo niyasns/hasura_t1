@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { Thumbnail, Header, Left, Body, Button, Title } from 'native-base';
-
+/*Navbar is the header for all tabs except search tab*/
 const NavBar = (props) => {
   return (
     <Header hasTabs style={styles.header}>

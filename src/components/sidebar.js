@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Thumbnail, Text, Content } from 'native-base';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-
+/* Sidebar component is used to populate the drawer*/
 const SideBar = () => {
   return (
     <Content style={{ backgroundColor: 'white'}}>
@@ -81,8 +81,6 @@ const SideBar = () => {
   );
 };
 
-export default SideBar;
-
 const styles = StyleSheet.create({ 
   Style: {
     flexDirection: 'column',
@@ -118,3 +116,5 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between'
   }
 });
+
+export default SideBar;

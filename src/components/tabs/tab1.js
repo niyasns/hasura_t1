@@ -2,7 +2,8 @@ import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import { Container, Thumbnail, Left, Content, Card, CardItem, Text, Body } from 'native-base';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-
+/* Tab1 is the tweets page used as home page. Some dummy tweets are 
+added */
 const Tab1 = () => {
     return (
         <Container>

@@ -4,9 +4,9 @@ import { Container, Header, Item, Input, Button, Footer, Text } from 'native-bas
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Actions } from 'react-native-router-flux';
 
-class SearchScreen extends Component {
-
-
+export default class SearchScreen extends Component {
+/*SearchScreen is displayed when user touches the search bar in header
+of search tab*/
    render() {  
     return (
         <Container style={styles.container}>
@@ -63,4 +63,3 @@ const styles = StyleSheet.create({
     }
 });
 
-export default SearchScreen;

@@ -5,8 +5,12 @@ import TabBar from '../components/tabbar';
 import SideBar from '../components/sidebar';
 import SearchBar from '../components/searchbar';
 
-class HomeScreen extends Component {
-
+export default class HomeScreen extends Component {
+  /*Two state variables are initialized inside constructor.
+  props are helpful in transfer data between parent and children 
+  components. title state is used to change the text in header during
+  tab change. title state is passed as a prop to Navbar. selected state 
+  is used to receive selected tab id from TabBar using callback function */ 
   constructor(props) {
     super(props);
     this.state = {
@@ -14,20 +18,23 @@ class HomeScreen extends Component {
       selected: 0,
     };
   }
-
+  /*function for close drawer*/
   closeDrawer = () => {
     this.drawer._root.close();
   };
-
+  /*function for open drawer*/
   openDrawer = () => {
     this.drawer._root.open();
   };
-
+  /*callback function receive selected tab id as parameter 'dataFromTab'.
+  dataFromTab is then assigned to 'selected' state to use outside callback 
+  function. */
   myCallback = (dataFromTab) => {
     this.setState({ selected: dataFromTab }, () => { console.log(this.state.selected); });
   };
 
-   render() {  
+  render() {  
+    /*state 'title' is changed according to state 'selected'*/
     if (this.state.selected === 0) {
       this.state.title = 'Home';
     } 
@@ -37,7 +44,9 @@ class HomeScreen extends Component {
     if (this.state.selected === 3) {
       this.state.title = 'Messages';
     } 
-
+    /*if 'selected' state  is 1, then it points to search tab.
+    In search tab , header need to be changed to SearchBar
+    (/src/components/searchbar.js)*/
     if (this.state.selected === 1) {
       return (
         <Drawer
@@ -75,11 +84,11 @@ class HomeScreen extends Component {
           style={{ backgroundColor: '#29B6F6' }}
           position="bottomRight" 
         >
-          <Icon name="add" style={{ fontSize: 35 }}/>
+          <Icon name="add" style={{ fontSize: 35 }} />
         </Fab>
         </Drawer>
       );
     }
    }
 }
-export default HomeScreen;
+
