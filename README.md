@@ -16,7 +16,7 @@ This is a twitter clone built with React-Native. This app contains some screens 
 1. Clone this repo
   `https://github.com/niyasns/hasura_t1.git`
 2. Enter the project folder
-4. run `npm install`
+4. run `yarn install`
 5. Ensure an emultor is live using `adb devices` command
 6. Run `react-native run-android` 
 
