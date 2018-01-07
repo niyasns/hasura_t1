@@ -7,11 +7,6 @@ import SearchBar from '../components/searchbar';
 
 class HomeScreen extends Component {
 
-
-  static navigationOptions = {
-    title: 'Home'
-  }
-
   constructor(props) {
     super(props);
     this.state = {
