@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Drawer } from 'native-base';
+import { View, Drawer, Fab, Icon } from 'native-base';
 import NavBar from '../components/navbar';
 import TabBar from '../components/tabbar';
 import SideBar from '../components/sidebar';
@@ -50,6 +50,12 @@ class HomeScreen extends Component {
         >
         <SearchBar openDrawer={this.openDrawer} />
         <TabBar iconColor={this.state.iconColor} callbackFromParent={this.myCallback} />
+        <Fab
+          position="bottomRight"
+          style={{ backgroundColor: '#29B6F6' }} 
+        >
+          <Icon name="share" />
+        </Fab>
         </Drawer>
       );
     }
@@ -65,6 +71,12 @@ class HomeScreen extends Component {
         >
         <NavBar title={this.state.title} openDrawer={this.openDrawer} />
         <TabBar iconColor={this.state.iconColor} callbackFromParent={this.myCallback} />
+        <Fab
+          style={{ backgroundColor: '#29B6F6' }}
+          position="bottomRight" 
+        >
+          <Icon name="share" />
+        </Fab>
         </Drawer>
       );
     }

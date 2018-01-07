@@ -19,25 +19,29 @@ export default class TabBar extends Component {
         this.setState({ selected: i.i }, function () {
             this.props.callbackFromParent(i.i);
             if (this.state.selected === 0) {
-                this.setState({ flag0: true });
-                this.setState({ flag1: false });
-                this.setState({ flag2: false });
-                this.setState({ flag3: false });
+                this.setState({ 
+                    flag0: true,
+                    flag1: false,
+                    flag2: false,
+                    flag3: false });
             } else if (this.state.selected === 1) {
-                this.setState({ flag0: false });
-                this.setState({ flag1: true });
-                this.setState({ flag2: false });
-                this.setState({ flag3: false });
+                this.setState({ 
+                    flag0: false,
+                    flag1: true,
+                    flag2: false,
+                    flag3: false });
             } else if (this.state.selected === 2) {
-                this.setState({ flag0: false });
-                this.setState({ flag1: false });
-                this.setState({ flag2: true });
-                this.setState({ flag3: false });
+                this.setState({ 
+                    flag0: false,
+                    flag1: false,
+                    flag2: true,
+                    flag3: false });
             } else if (this.state.selected === 3) {
-                this.setState({ flag0: false });
-                this.setState({ flag1: false });
-                this.setState({ flag2: false });
-                this.setState({ flag3: true });
+                this.setState({ 
+                    flag0: false,
+                    flag1: false,
+                    flag2: false,
+                    flag3: true });
             }
         }); 
         console.log(this.state.flag0);
@@ -45,6 +49,7 @@ export default class TabBar extends Component {
         console.log(this.state.flag2);
         console.log(this.state.flag3);
     }
+
     render() {
         return (
             <Tabs tabBarUnderlineStyle={styles.tabBarUnderline} onChangeTab={this.tabSelected}>
