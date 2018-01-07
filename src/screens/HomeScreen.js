@@ -7,11 +7,15 @@ import SearchBar from '../components/searchbar';
 
 class HomeScreen extends Component {
 
+
+  static navigationOptions = {
+    title: 'Home'
+  }
+
   constructor(props) {
     super(props);
     this.state = {
       title: 'Home',
-      title1: 'king',
       selected: 0
     };
   }
@@ -29,6 +33,16 @@ class HomeScreen extends Component {
   };
 
    render() {  
+    if (this.state.selected === 0) {
+      this.state.title = 'Home';
+    } 
+    if (this.state.selected === 2) {
+      this.state.title = 'Notifications';
+    } 
+    if (this.state.selected === 3) {
+      this.state.title = 'Messages';
+    } 
+
     if (this.state.selected === 1) {
       return (
         <Drawer
@@ -39,7 +53,7 @@ class HomeScreen extends Component {
         panOpenMask={0.25} 
         side="left"
         >
-        <SearchBar title={this.state.title1} openDrawer={this.openDrawer} />
+        <SearchBar openDrawer={this.openDrawer} />
         <TabBar callbackFromParent={this.myCallback} />
         </Drawer>
       );

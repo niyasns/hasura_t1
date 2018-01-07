@@ -5,12 +5,13 @@
  */
 
 import React, { Component } from 'react';
-import HomeScreen from './src/screens/HomeScreen';
+import RouterComponent from './src/Router';
 
 export default class App extends Component {
+
   render() {
     return (
-        <HomeScreen />
+      <RouterComponent />
     );
   }
 }
